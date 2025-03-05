@@ -16,7 +16,7 @@
                                 <h4 class="z-10 text-3xl  duration-300"><?php echo esc_html($service_title); ?></h4>
                                 <p class="text-lg" ><?php echo esc_html($service_description); ?></p>
                             </div>
-                    
+                 
                             <img class="absolute top-0 left-0 w-full h-full z-[-10]  duration-300 object-cover " src="<?php echo esc_html($service_image); ?>" alt="hero-image" />
                             <p class="read-more z-10 text-xl  font-bold duration-300">Läs mer →</p>
                         </a>

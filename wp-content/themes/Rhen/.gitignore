@@ -9,3 +9,5 @@ wp-content/debug.log
 # Ignore log files
 *.log
 
+wp-content/debug.log
+

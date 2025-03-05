@@ -28,7 +28,7 @@
                 'container'      => 'nav',      
             ]);
             ?>
-            <a class="button" href="">LET´S TALK!</a>
+            <a class="button bg-[#464646] text-white " href="">LET´S TALK!</a>
         </div>
 
     </div>
