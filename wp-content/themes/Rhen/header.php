@@ -13,13 +13,23 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class=" bg-light-gray">
+<header class=" bg-white">
     <div class="flex justify-between items-center w-full px-16 max-w-[1570px] mx-auto ">
         <a href="/cqxlux" class="logo" >
           
             <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/rehnslogo2.png" alt="Logo">
 
         </a>
+        <div class="flex flex-row justify-between items-center gap-8">
+          
+            <a class="button bg-[#464646] text-white " href="">LET´S TALK!</a>
+        </div>
+
+    </div>
+</header>
+<div class="bg-black ">
+<div class="flex justify-between items-center w-full px-16 max-w-[1570px] mx-auto ">
+   
         <div class="flex flex-row justify-between items-center gap-8">
             <?php
             wp_nav_menu([
@@ -28,8 +38,8 @@
                 'container'      => 'nav',      
             ]);
             ?>
-            <a class="button bg-[#464646] text-white " href="">LET´S TALK!</a>
         </div>
 
     </div>
-</header>
+
+</div>

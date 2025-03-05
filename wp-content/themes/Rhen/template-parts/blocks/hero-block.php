@@ -17,7 +17,7 @@ $hero_award_text = !empty(get_field('hero_award_text')) ? get_field('hero_award_
         <img class="absolute top-[-6rem] right-0 max-w-[120px]" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/deckia-logo.jpg">
         <div class="flex flex-row items-center h-full">
             <div class="flex flex-col gap-4 grow w-full text-white max-w-[60%]">
-                <h4 class="text-primary font-bold"><?php echo esc_html($hero_subheading); ?></h4>
+                <h4 class="uppercase text-white font-bold"><?php echo esc_html($hero_subheading); ?> --   car   ---   fixing</h4>
                 <h1><?php echo esc_html($hero_heading); ?></h1>
                 <div class="text-xl  font-bold"><?php echo esc_html($hero_description); ?></div>
 
