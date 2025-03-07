@@ -21,14 +21,31 @@
 
         </a>
         <div class="flex flex-row justify-between items-center gap-8">
-          
-            <a class="button bg-[#464646] text-white " href="">LET´S TALK!</a>
+            <div class="flex flex-row gap-4">
+                <i class="icon-mail opacity-70  text-5xl "></i>
+                <div class="flex flex-col ">
+                    <div class="uppercase opacity-70 font-bold">kontakta oss</div>
+                    <a class="text-primary hover:underline font-bold" href="mailto:info@rehnsgummi.se">info@rehnsgummi.se</a>
+                </div>
+            </div>  
+            <div class="flex flex-row gap-4">
+            <i class="icon-phone opacity-70  text-5xl"></i>
+                <div class="flex flex-col">
+                    <div class="uppercase opacity-70 font-bold">Ringa oss</div>
+                    <a class="text-primary hover:underline font-bold" href="tel:+46155221000">+46155221000</a>
+                </div>
+            </div>  
+
+
+            <a class="button bg-[#464646] text-white uppercase " href="">Boka tid
+                 <i class="icon-chevron-right text-white ml-4 duration-300"></i>
+            </a>
         </div>
 
     </div>
 </header>
 <div class="bg-black ">
-<div class="flex justify-between items-center w-full px-16 max-w-[1570px] mx-auto ">
+    <div class="flex justify-between items-center w-full px-16 max-w-[1570px] mx-auto ">
    
         <div class="flex flex-row justify-between items-center gap-8">
             <?php

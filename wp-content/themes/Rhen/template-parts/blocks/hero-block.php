@@ -7,6 +7,7 @@ $hero_button_url = !empty(get_field('hero_button_link')) ? get_field('hero_butto
 $hero_button_text = !empty(get_field('hero_button_text')) ? get_field('hero_button_text') : '';
 $hero_image = !empty(get_field('hero_image')) ? get_field('hero_image') : '';
 $hero_award_text = !empty(get_field('hero_award_text')) ? get_field('hero_award_text') : '';
+$chevron = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>';
 ?>
 
 <section class="hero-section relative flex ">
@@ -18,13 +19,14 @@ $hero_award_text = !empty(get_field('hero_award_text')) ? get_field('hero_award_
         <div class="flex flex-row items-center h-full">
             <div class="flex flex-col gap-4 grow w-full text-white max-w-[60%]">
                 <h4 class="uppercase text-white font-bold"><?php echo esc_html($hero_subheading); ?> --   car   ---   fixing</h4>
-                <h1><?php echo esc_html($hero_heading); ?></h1>
-                <div class="text-xl  font-bold"><?php echo esc_html($hero_description); ?></div>
+                <h1><?php echo esc_html($hero_heading); ?><span class="text-primary"> 2011</span></h1>
+                <div class="text-xl hidden font-bold"><?php echo esc_html($hero_description); ?></div>
 
                 <?php if ($hero_button_url && $hero_button_text): ?>
                     <div>
                         <a class="button text-white border-4 border-white w-max" href="<?php echo esc_url($hero_button_url); ?>">
                             <?php echo esc_html($hero_button_text); ?>
+                            <i class="icon-chevron-right text-white ml-4 duration-300"></i>
                         </a>
                     </div>
                 <?php endif; ?>

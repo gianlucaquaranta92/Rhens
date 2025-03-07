@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/rhens/wp-content/themes/Rhen/assets/fonts/icomoon.eot?odq34c');
+  src:  url('/rhens/wp-content/themes/Rhen/assets/fonts/icomoon.eot?odq34c#iefix') format('embedded-opentype'),
+    url('/rhens/wp-content/themes/Rhen/assets/fonts/icomoon.ttf?odq34c') format('truetype'),
+    url('/rhens/wp-content/themes/Rhen/assets/fonts/icomoon.woff?odq34c') format('woff'),
+    url('/rhens/wp-content/themes/Rhen/assets/fonts/icomoon.svg?odq34c#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+  content: "\e901";
+}
+.icon-phone:before {
+  content: "\e902";
+}
+.icon-pin:before {
+  content: "\e903";
+}
+.icon-chevron-right:before {
+  content: "\e900";
+}
