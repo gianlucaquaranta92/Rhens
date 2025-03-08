@@ -1,6 +1,10 @@
 <footer>
     
     <p>&copy; all rights reserved <?php echo date("Y"); ?> <?php bloginfo('name'); ?></p>
+    <div class="flex flex-col">
+        <i class="icon-phone opacity-70  text-5xl"></i>
+        <a class=" hover:underline font-bold" href="tel:+46155221000">Hitta hit</a>
+    </div>
 </footer>
 <?php wp_footer(); ?>
 
