@@ -151,6 +151,19 @@ function register_acf_blocks() {
                 wp_enqueue_style('cta-block-style', get_template_directory_uri() . '/assets/css/hero-block.css');
             }
         ));
+        acf_register_block_type(array(
+            'name'              => 'why-us-block',
+            'title'             => __('Why us block'),
+            'description'       => __('A section that shows to the future customers why they should choose us.'),
+            'render_template'   => 'template-parts/blocks/why-us-block.php', 
+            'category'          => 'formatting',
+            'icon'              => 'screenoptions',
+            'keywords'          => array('img-text', 'acf', 'block'),
+            'supports'          => array('align' => true),
+            'enqueue_assets'    => function() {
+                wp_enqueue_style('why-us-block-style', get_template_directory_uri() . '/assets/css/hero-block.css');
+            }
+        ));
     }
 }
 
