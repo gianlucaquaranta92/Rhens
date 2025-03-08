@@ -117,7 +117,15 @@ html {
 }
 
 
-
+.counter {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 72px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -125,7 +133,7 @@ body {
     color: #333;
   }
   
-  h1, h2, h3 , h4 {
+  h1, h2, h3 , h4 ,h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
        margin: 0;

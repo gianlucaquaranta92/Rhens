@@ -4,7 +4,7 @@ $button_text = get_field('counter_button_text');
 $button_url = get_field('counter_button_url');
 
 if (!empty($counters)): ?>
-<section>
+<section class="bg-light-gray pt-0">
     <div class="page-width">
         <div class="flex justify-around gap-16">
             <?php foreach ($counters as $counter): 
@@ -12,7 +12,11 @@ if (!empty($counters)): ?>
                 $counter_text = $counter['counter_text'];
             ?>
                 <div>
-                    <div class="counter" data-target="<?php echo esc_attr($counter_number); ?>">0</div>
+                    <div class="flex flex-row gap-4 items-center">
+                      <span class="text-primary text-4xl font-bold">+</span>
+                      <div class="counter" data-target="<?php echo esc_attr($counter_number); ?>"> 0</div>
+                   
+                    </div>
                     <div class="text-center"><?php echo esc_html($counter_text); ?></div>
                 </div>
             <?php endforeach; ?>

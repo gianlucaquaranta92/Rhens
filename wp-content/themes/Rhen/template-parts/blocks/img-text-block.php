@@ -8,7 +8,7 @@ $button_text = !empty(get_field('img_n_text_button_text')) ? get_field('img_n_te
 $button_url = !empty(get_field('img_n_text_button_url')) ? get_field('img_n_text_button_url') : '';
 ?>
 
-<section class="bg-light-gray">
+<section >
     <div class="page-width">
         <div class="flex gap-8">
             <?php if ($section_image): ?>
@@ -17,7 +17,7 @@ $button_url = !empty(get_field('img_n_text_button_url')) ? get_field('img_n_text
             <div class="grow max-w-[50%] flex flex-col gap-8 justify-center">
                 <div>
                     <?php if ($subheading): ?>
-                        <h4 class="text-primary font-bold pb-4"><?php echo esc_html($subheading); ?></h4>
+                        <h5 class="pl-4 pb-4 font-bold uppercase text-base relative before:content-[''] before:absolute before:bg-primary before:w-[5px] before:h-[18px] before:top-[4px] before:left-0"><?php echo esc_html($subheading); ?></h5>
                     <?php endif; ?>
                     <?php if ($section_title): ?>
                         <h2><?php echo esc_html($section_title); ?></h2>
