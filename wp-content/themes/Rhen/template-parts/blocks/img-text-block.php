@@ -33,8 +33,10 @@ $button_url = !empty(get_field('img_n_text_button_url')) ? get_field('img_n_text
                 <?php endif; ?>
 
                 <?php if ($button_text && $button_url): ?>
-                    <a class="button w-max" href="<?php echo esc_url($button_url); ?>"><?php echo esc_html($button_text); ?></a>
-                <?php endif; ?>
+                    <a class="button w-max  bg-[#464646] text-white uppercase" href="<?php echo esc_url($button_url); ?>"><?php echo esc_html($button_text); ?>
+                        <i class="icon-chevron-right text-white ml-4 duration-300"></i>
+                    </a>
+                    <?php endif; ?>
             </div>
         </div>
     </div>
