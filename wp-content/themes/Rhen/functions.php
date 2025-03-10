@@ -1,26 +1,26 @@
 <?php
 /**
- * CQXunctions and definitions
+ * RHENS functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package CQX
- * @since CQX 1.0
+ * @package RHENS 
+ * @since RHENS  1.0
  */
 
 
 
-function cqx_register_menus() {
+function rhen_register_menus() {
     register_nav_menus([
-        'primary-menu' => __('Primary Menu', 'cqx'),
+        'primary-menu' => __('Primary Menu', 'rhen'),
     ]);
 }
-add_action('after_setup_theme', 'cqx_register_menus');
+add_action('after_setup_theme', 'rhen_register_menus');
 
 
 
 // Enqueue styles and scripts
-function cqx_scripts() {
+function rhen_scripts() {
     wp_enqueue_style('topslot-style', get_stylesheet_uri());
     wp_enqueue_style('tailwind-css', get_template_directory_uri() . '/src/output.css', array(), null);
 	
@@ -33,7 +33,7 @@ function cqx_scripts() {
 		);
     
 }
-add_action('wp_enqueue_scripts', 'cqx_scripts');
+add_action('wp_enqueue_scripts', 'rhen_scripts');
 
 
 // Allow SVG uploads in WordPress
@@ -193,3 +193,4 @@ function enqueue_splide() {
     wp_enqueue_script('splide-js', 'https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js', array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_splide');
+

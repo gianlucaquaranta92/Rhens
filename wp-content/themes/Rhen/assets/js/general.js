@@ -54,5 +54,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('.splide', {
+        type: 'loop',
+      perPage: 5,      
+      perMove: 1,       
+      autoplay: true,   
+      interval: 2000,   
+      pauseOnHover: true, 
+      arrows: false,    
+      pagination: false,
+      gap: '20px'
+    }).mount();
+  });
+
 
   

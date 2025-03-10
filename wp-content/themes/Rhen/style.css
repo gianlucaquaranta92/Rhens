@@ -156,22 +156,13 @@ header {
     }
 
 }
-
-footer {
-    background-color: black;
-    padding: 4rem;
-    color: white;
-    text-align: center;
-}
-
 section {
   padding: 6rem 4rem;
-    .page-width {
-        margin: 0 auto;
-        max-width: 1440px;
-        width: 100%;
-    }
-    
+}
+.page-width {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
 }
 
 /* Navigation styling*/

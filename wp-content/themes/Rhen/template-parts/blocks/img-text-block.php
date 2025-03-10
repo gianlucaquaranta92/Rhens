@@ -3,7 +3,6 @@ $section_image = !empty(get_field('img_n_text_section_image')) ? get_field('img_
 $subheading = !empty(get_field('img_n_text_subheading')) ? get_field('img_n_text_subheading') : '';
 $section_title = !empty(get_field('img_n_text_section_title')) ? get_field('img_n_text_section_title') : '';
 $description = !empty(get_field('img_n_text_description')) ? get_field('img_n_text_description') : '';
-$bold_statement = !empty(get_field('img_n_text_bold_statement')) ? get_field('img_n_text_bold_statement') : '';
 $button_text = !empty(get_field('img_n_text_button_text')) ? get_field('img_n_text_button_text') : '';
 $button_url = !empty(get_field('img_n_text_button_url')) ? get_field('img_n_text_button_url') : '';
 ?>
@@ -28,9 +27,6 @@ $button_url = !empty(get_field('img_n_text_button_url')) ? get_field('img_n_text
                     <p><?php echo esc_html($description); ?></p>
                 <?php endif; ?>
 
-                <?php if ($bold_statement): ?>
-                    <p class="font-bold"><?php echo esc_html($bold_statement); ?></p>
-                <?php endif; ?>
 
                 <?php if ($button_text && $button_url): ?>
                     <a class="button w-max  bg-[#464646] text-white uppercase" href="<?php echo esc_url($button_url); ?>"><?php echo esc_html($button_text); ?>

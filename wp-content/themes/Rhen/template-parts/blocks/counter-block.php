@@ -13,9 +13,9 @@ if (!empty($counters)): ?>
             ?>
                 <div>
                     <div class="flex flex-row gap-4 items-center">
-                      <span class="text-primary text-4xl font-bold">+</span>
+                  
                       <div class="counter" data-target="<?php echo esc_attr($counter_number); ?>"> 0</div>
-                   
+                      <span class="text-primary text-4xl font-bold">+</span>
                     </div>
                     <div class="text-center"><?php echo esc_html($counter_text); ?></div>
                 </div>
