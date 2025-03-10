@@ -14,9 +14,9 @@ $cta_image_background = !empty(get_field('cta_image_background', 'option')) ? ge
         alt="cta-background">
                
     <div class="page-width z-10">
-        <div class="flex flex-row gap-16 items-center">
+        <div class="flex flex-row gap-8 items-center ">
          
-                <div class="max-w-[50%] grow-1">
+                <div class="max-w-[49%] grow-1">
                     <h2  class="text-white">
                         <?php echo esc_html($cta_heading); ?>
                     </h2>
