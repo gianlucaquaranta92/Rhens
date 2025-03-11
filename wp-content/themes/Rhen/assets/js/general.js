@@ -68,5 +68,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }).mount();
   });
 
+  // header shrink on scroll
+  jQuery(function ($) {
+    function checkScroll() {
+        if ($(window).scrollTop() > 50) {
+            $("body").addClass("scrolled");
+        } else {
+            $("body").removeClass("scrolled");
+        }
+    }
+
+    // Run immediately when the script loads
+    checkScroll();
+
+    // Run on scroll
+    $(window).on("scroll", checkScroll);
+
+    // Run again when the page is fully loaded
+    $(window).on("load", checkScroll);
+});
+
+
+
 
   

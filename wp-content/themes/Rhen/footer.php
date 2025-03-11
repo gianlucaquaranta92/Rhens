@@ -16,7 +16,7 @@ $opening_hours = get_field('contact_open_times', 'option'); // Repeater for open
         <div class="footer-columns flex gap-4 justify-between flex-row pb-8">
 
             <!-- Column 1: Logo, Heading, and Opening Hours -->
-            <div class="flex flex-col">
+            <div class="flex flex-col justify-between">
                 <?php if (!empty($footer_logo)) : ?>
                     <img class="max-w-[200px]" src="<?php echo esc_url($footer_logo); ?>" alt="Footer Logo">
                 <?php endif; ?>

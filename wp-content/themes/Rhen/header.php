@@ -11,7 +11,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class=" bg-white">
+<header id="header" class=" bg-white">
     <div class="flex justify-between items-center w-full px-16 max-w-[1570px] mx-auto ">
         <a href="/cqxlux" class="logo" >
           
