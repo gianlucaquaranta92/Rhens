@@ -7,12 +7,10 @@ $button_text = !empty(get_field('img_n_text_button_text')) ? get_field('img_n_te
 $button_url = !empty(get_field('img_n_text_button_url')) ? get_field('img_n_text_button_url') : '';
 ?>
 
-<section >
+<section class="bg-light-gray" >
     <div class="page-width">
         <div class="flex gap-8">
-            <?php if ($section_image): ?>
-                <img class="max-w-[50%] grow" src="<?php echo esc_url($section_image); ?>" alt="business-woman">
-            <?php endif; ?>
+        
             <div class="grow max-w-[50%] flex flex-col gap-8 justify-center">
                 <div>
                     <?php if ($subheading): ?>
@@ -34,6 +32,10 @@ $button_url = !empty(get_field('img_n_text_button_url')) ? get_field('img_n_text
                     </a>
                     <?php endif; ?>
             </div>
+
+            <?php if ($section_image): ?>
+                <img class="max-w-[50%] grow" src="<?php echo esc_url($section_image); ?>" alt="business-woman">
+            <?php endif; ?>
         </div>
     </div>
 </section>

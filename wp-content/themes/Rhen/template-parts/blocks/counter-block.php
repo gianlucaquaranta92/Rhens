@@ -11,20 +11,18 @@ if (!empty($counters)): ?>
                 $counter_number = $counter['counter_number'];
                 $counter_text = $counter['counter_text'];
             ?>
-                <div>
+                <div class="flex justify-center items-center flex-col">
                     <div class="flex flex-row gap-4 items-center">
                   
                       <div class="counter" data-target="<?php echo esc_attr($counter_number); ?>"> 0</div>
                       <span class="text-primary text-4xl font-bold">+</span>
                     </div>
-                    <div class="text-center"><?php echo esc_html($counter_text); ?></div>
+                    <div class="text-center text-2xl"><?php echo esc_html($counter_text); ?></div>
                 </div>
             <?php endforeach; ?>
         </div>
 
-        <a class="button w-max mx-auto mt-16" href="<?php echo esc_url($button_url); ?>">
-            <?php echo esc_html($button_text); ?>
-        </a>
+   
     </div>
 </section>
 <?php endif; ?>
