@@ -17,6 +17,8 @@ function rhen_register_menus() {
 }
 add_action('after_setup_theme', 'rhen_register_menus');
 
+// Enable featured images (post thumbnails) for pages
+add_theme_support('post-thumbnails', ['post', 'page']);
 
 
 // Enqueue styles and scripts

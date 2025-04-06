@@ -13,7 +13,7 @@
 <body <?php body_class(); ?>>
 <header id="header" class=" bg-white">
     <div class="flex justify-between items-center w-full px-16 max-w-[1570px] mx-auto ">
-        <a href="/cqxlux" class="logo" >
+        <a href="/rhens" class="logo" >
           
             <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/rehnslogo2.png" alt="Logo">
 

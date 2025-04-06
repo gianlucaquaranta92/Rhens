@@ -7,7 +7,7 @@ $contact_email = get_field('contact_mail', 'option');
 $opening_hours = get_field('contact_open_times', 'option'); // Repeater for opening hours
 ?>
 
-<footer class="bg-black text-white p-16">
+<footer class="bg-black text-white px-16 py-24">
     <div class="flex flex-col">
     
     </div>
